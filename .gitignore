@@ -1,0 +1,33 @@
+# ---------- Python (backend) ----------
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# ---------- Node / 前端 ----------
+node_modules/
+*.tsbuildinfo
+
+# ---------- 环境变量与密钥 ----------
+.env
+.env.*
+!.env.example
+
+# ---------- 编辑器 / 系统（仅根目录，勿影响 frontend/.vscode）----------
+/.vscode/
+/.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# ---------- 日志 ----------
+*.log
+logs/
