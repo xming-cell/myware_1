@@ -1,33 +1,29 @@
-# ---------- Python (backend) ----------
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
 .venv/
-venv/
-env/
-.pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.pytest_cache/
 *.egg-info/
-build/
 dist/
+build/
 
-# ---------- Node / 前端 ----------
+# Node
 node_modules/
-*.tsbuildinfo
+frontend/dist/
+.vite/
 
-# ---------- 环境变量与密钥 ----------
+# 密钥与本地配置（注意 .env.example 要提交）
 .env
 .env.*
 !.env.example
 
-# ---------- 编辑器 / 系统（仅根目录，勿影响 frontend/.vscode）----------
-/.vscode/
-/.idea/
-.DS_Store
-Thumbs.db
-*.swp
+# 本地数据
+*.db
+*.sqlite3
 
-# ---------- 日志 ----------
-*.log
-logs/
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
