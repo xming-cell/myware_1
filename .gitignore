@@ -27,3 +27,6 @@ frontend/dist/
 .vscode/
 .idea/
 .DS_Store
+
+#视觉产生工具
+.dsh-vision-router/

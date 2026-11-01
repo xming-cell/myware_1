@@ -26,9 +26,10 @@ def main() -> None:
     run("backend format", ["uv", "run", "ruff", "format", "--check", "."], BACKEND)
     run("backend types", ["uv", "run", "mypy", "src"], BACKEND)
     run("backend tests", ["uv", "run", "pytest", "-q"], BACKEND)
-    run("frontend types", ["pnpm", "run", "typecheck"], FRONTEND)
-    run("frontend lint", ["pnpm", "run", "lint"], FRONTEND)
-    run("frontend tests", ["pnpm", "run", "test"], FRONTEND)
+    run("frontend types", ["pnpm", "run", "type-check"], FRONTEND)
+    run("frontend lint (oxlint)", ["pnpm", "exec", "oxlint", "."], FRONTEND)
+    run("frontend lint (eslint)", ["pnpm", "exec", "eslint", "."], FRONTEND)
+    run("frontend tests", ["pnpm", "run", "test:unit", "--", "--run"], FRONTEND)
     print("\nAll checks passed.", flush=True)
 
 
